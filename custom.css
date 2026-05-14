@@ -116,21 +116,11 @@ body {
   color: white;
 }
 
-
-
 /* Tablet */
 @media (max-width: 992px) {
   .clockBox {
     width: 90%;
     padding: 30px 20px;
-  }
-
-  .clockSection h2 {
-    font-size: 32px;
-  }
-
-  .clockSection p {
-    font-size: 20px;
   }
 
   .timeBox {
@@ -141,17 +131,13 @@ body {
   .timeBox span {
     font-size: 26px;
   }
-
-  .colon {
-    font-size: 30px;
-  }
 }
 
 /* Mobile */
 @media (max-width: 768px) {
   .clockSection {
+    padding: 30px 15px;
     height: auto;
-    padding: 40px 15px;
   }
 
   .clockBox {
@@ -160,48 +146,32 @@ body {
   }
 
   .clockSection h2 {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   .clockSection p {
     font-size: 18px;
   }
 
-  .timeBoxes {
-    gap: 10px;
-  }
-
   .timeBox {
     min-width: 65px;
-    padding: 15px 10px;
+    padding: 14px 10px;
   }
 
   .timeBox span {
     font-size: 22px;
   }
 
-  .timeBox small {
-    font-size: 10px;
-  }
-
   .colon {
     font-size: 24px;
   }
-
-  .amPmBox {
-    min-width: 60px;
-  }
-
-  .amPmBox span {
-    font-size: 18px;
-  }
 }
 
-/* Small Mobile */
+/* Small mobile */
 @media (max-width: 480px) {
-  .timeBoxes {
+  .timeBoxRow {
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
   }
 
   .colon {
@@ -209,11 +179,10 @@ body {
   }
 
   .timeBox {
-    width: 100%;
-    max-width: 180px;
+    width: 160px;
   }
 
   .amPmBox {
-    max-width: 120px;
+    width: 120px;
   }
 }

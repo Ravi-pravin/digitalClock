@@ -1,66 +1,67 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Digital Clock</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock</title>
 
-  <link rel="icon" type="image/png" href="./assets/siteIcon.png" />
-  <link rel="stylesheet" href="./custom.css" />
+    <link rel="icon" type="image/png" href="./assets/siteIcon.png" />
+    <link rel="stylesheet" href="./custom.css" />
 
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-  />
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
 
-<body>
-  <header></header>
+  <body>
+    <header></header>
 
-  <main>
-    <div class="toggleSection">
-      <button id="toggleMode" class="toggleIcon">
-        <i class="fa-solid fa-moon"></i>
-      </button>
-    </div>
+    <main>
+      <div class="toggleSection">
+        <button id="toggleMode" class="toggleIcon">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
 
-    <div class="clockSection">
-      <div class="clockBox">
-        <h2>Digital Clock</h2>
+      <div class="clockSection">
+        <div class="clockBox">
+          <h2>Digital Clock</h2>
 
-        <p id="date">Loading date...</p>
+          <p id="date">Loading date...</p>
+          <div class="timeBoxRow">
+            <div class="timeBoxes">
+              <div class="timeBox">
+                <span id="hours">00</span>
+                <small>Hours</small>
+              </div>
 
-        <div class="timeBoxes">
-          <div class="timeBox">
-            <span id="hours">00</span>
-            <small>Hours</small>
-          </div>
+              <span class="colon">:</span>
 
-          <span class="colon">:</span>
+              <div class="timeBox">
+                <span id="minutes">00</span>
+                <small>Minutes</small>
+              </div>
 
-          <div class="timeBox">
-            <span id="minutes">00</span>
-            <small>Minutes</small>
-          </div>
+              <span class="colon">:</span>
 
-          <span class="colon">:</span>
+              <div class="timeBox">
+                <span id="seconds">00</span>
+                <small>Seconds</small>
+              </div>
 
-          <div class="timeBox">
-            <span id="seconds">00</span>
-            <small>Seconds</small>
-          </div>
-
-          <div class="timeBox amPmBox">
-            <span id="ampm">AM</span>
-            <small>Period</small>
+              <div class="timeBox amPmBox">
+                <span id="ampm">AM</span>
+                <small>Period</small>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
 
-  <footer></footer>
+    <footer></footer>
 
-  <script src="./script.js"></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
