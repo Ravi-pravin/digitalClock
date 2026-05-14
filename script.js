@@ -13,7 +13,7 @@ function updateClock() {
   let m = now.getMinutes();
   let s = now.getSeconds();
 
-  let ampm = h >= 12 ? "PM" : "AM";
+  const ampm = h >= 12 ? "PM" : "AM";
 
   h = h % 12 || 12;
 

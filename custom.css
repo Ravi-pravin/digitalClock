@@ -44,14 +44,30 @@ body {
 }
 
 .clockSection {
-  height: 88vh;
+  min-height: 88vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+}
+
+.clockBox {
+  padding: 40px;
+  border-radius: 12px;
+  border: 5px double black;
+  text-align: center;
+  transition: 0.4s;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.dark .clockBox {
+  border: 5px double white;
 }
 
 .clockSection h2 {
   font-size: 40px;
+  margin-bottom: 10px;
 }
 
 .clockSection p {
@@ -59,16 +75,8 @@ body {
   font-weight: bold;
 }
 
-.clockBox {
-  padding: 40px;
-  border-radius: 10px;
-  border: 5px double black;
-  text-align: center;
-  transition: 0.4s;
-}
-
-.dark .clockBox {
-  border: 5px double white;
+.timeBoxRow {
+  margin-top: 25px;
 }
 
 .timeBoxes {
@@ -76,7 +84,6 @@ body {
   gap: 15px;
   justify-content: center;
   align-items: center;
-  margin-top: 25px;
   flex-wrap: wrap;
 }
 
@@ -116,11 +123,28 @@ body {
   color: white;
 }
 
+.amPmBox {
+  min-width: 70px;
+  padding: 18px 12px;
+}
+
+.amPmBox span {
+  font-size: 24px;
+}
+
 /* Tablet */
 @media (max-width: 992px) {
   .clockBox {
     width: 90%;
     padding: 30px 20px;
+  }
+
+  .clockSection h2 {
+    font-size: 32px;
+  }
+
+  .clockSection p {
+    font-size: 20px;
   }
 
   .timeBox {
@@ -131,13 +155,16 @@ body {
   .timeBox span {
     font-size: 26px;
   }
+
+  .colon {
+    font-size: 30px;
+  }
 }
 
 /* Mobile */
 @media (max-width: 768px) {
   .clockSection {
     padding: 30px 15px;
-    height: auto;
   }
 
   .clockBox {
@@ -153,6 +180,10 @@ body {
     font-size: 18px;
   }
 
+  .timeBoxes {
+    gap: 10px;
+  }
+
   .timeBox {
     min-width: 65px;
     padding: 14px 10px;
@@ -162,14 +193,26 @@ body {
     font-size: 22px;
   }
 
+  .timeBox small {
+    font-size: 10px;
+  }
+
   .colon {
     font-size: 24px;
   }
+
+  .amPmBox {
+    min-width: 60px;
+  }
+
+  .amPmBox span {
+    font-size: 18px;
+  }
 }
 
-/* Small mobile */
+/* Small Mobile */
 @media (max-width: 480px) {
-  .timeBoxRow {
+  .timeBoxes {
     flex-direction: column;
     gap: 12px;
   }
