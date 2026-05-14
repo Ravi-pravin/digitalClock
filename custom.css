@@ -1,6 +1,8 @@
+/* Google Fonts Import */
 @import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
+/* Heading font style */
 h1,
 h2,
 h3,
@@ -10,24 +12,28 @@ h6 {
   font-family: "Merienda", cursive;
 }
 
+/* Base body styling */
 body {
   margin: 0;
   font-family: "Nunito", sans-serif;
   background: #f4f4f4;
-  transition: 0.4s;
+  transition: 0.4s; /* smooth theme change */
 }
 
+/* Dark mode styles */
 .dark {
   background: #121212;
   color: white;
 }
 
+/* Toggle button container */
 .toggleSection {
   display: flex;
   justify-content: flex-end;
   padding: 20px;
 }
 
+/* Toggle button style */
 .toggleIcon {
   padding: 10px 15px;
   border: none;
@@ -38,11 +44,13 @@ body {
   transition: 0.3s;
 }
 
+/* Toggle button in dark mode */
 .dark .toggleIcon {
   background: #2a2a2a;
   color: white;
 }
 
+/* Main clock section center alignment */
 .clockSection {
   min-height: 88vh;
   display: flex;
@@ -51,6 +59,7 @@ body {
   padding: 20px;
 }
 
+/* Clock container box */
 .clockBox {
   padding: 40px;
   border-radius: 12px;
@@ -61,24 +70,29 @@ body {
   max-width: 100%;
 }
 
+/* Clock box dark mode */
 .dark .clockBox {
   border: 5px double white;
 }
 
+/* Title styling */
 .clockSection h2 {
   font-size: 40px;
   margin-bottom: 10px;
 }
 
+/* Date text */
 .clockSection p {
   font-size: 24px;
   font-weight: bold;
 }
 
+/* Time section wrapper */
 .timeBoxRow {
   margin-top: 25px;
 }
 
+/* Flex layout for time blocks */
 .timeBoxes {
   display: flex;
   gap: 15px;
@@ -87,6 +101,7 @@ body {
   flex-wrap: wrap;
 }
 
+/* Individual time box */
 .timeBox {
   padding: 20px;
   min-width: 90px;
@@ -96,43 +111,52 @@ body {
   transition: 0.3s;
 }
 
+/* Dark mode time box */
 .dark .timeBox {
   background: #2a2a2a;
   color: white;
   box-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
 }
 
+/* Number inside box */
 .timeBox span {
   font-size: 32px;
   font-weight: bold;
   display: block;
 }
 
+/* Label under number */
 .timeBox small {
   letter-spacing: 1px;
   font-size: 12px;
 }
 
+/* Colon between time units */
 .colon {
   font-size: 40px;
   font-weight: bold;
   line-height: 1;
 }
 
+/* Dark mode colon */
 .dark .colon {
   color: white;
 }
 
+/* AM/PM box styling */
 .amPmBox {
   min-width: 70px;
   padding: 18px 12px;
 }
 
+/* AM/PM text size */
 .amPmBox span {
   font-size: 24px;
 }
 
-/* Tablet */
+/* ========================= */
+/* TABLET RESPONSIVE DESIGN */
+/* ========================= */
 @media (max-width: 992px) {
   .clockBox {
     width: 90%;
@@ -161,7 +185,9 @@ body {
   }
 }
 
-/* Mobile */
+/* ========================= */
+/* MOBILE RESPONSIVE DESIGN */
+/* ========================= */
 @media (max-width: 768px) {
   .clockSection {
     padding: 30px 15px;
@@ -210,7 +236,9 @@ body {
   }
 }
 
-/* Small Mobile */
+/* ========================= */
+/* SMALL MOBILE DESIGN */
+/* ========================= */
 @media (max-width: 480px) {
   .timeBoxes {
     flex-direction: column;

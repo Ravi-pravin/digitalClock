@@ -3,34 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Digital Clock</title>
+    <!-- Page title shown in browser tab -->
 
     <link rel="icon" type="image/png" href="./assets/siteIcon.png" />
+    <!-- Favicon (site icon in browser tab) -->
+
     <link rel="stylesheet" href="./custom.css" />
+    <!-- External CSS file -->
 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
+    <!-- Font Awesome CDN for icons -->
   </head>
 
   <body>
-    <header></header>
+    <header>
+      <!-- Header section (currently empty, can be used later for nav/logo) -->
+    </header>
 
     <main>
+      <!-- Dark/Light mode toggle button -->
       <div class="toggleSection">
         <button id="toggleMode" class="toggleIcon">
           <i class="fa-solid fa-moon"></i>
         </button>
       </div>
 
+      <!-- Clock UI Section -->
       <div class="clockSection">
         <div class="clockBox">
           <h2>Digital Clock</h2>
 
+          <!-- Date display -->
           <p id="date">Loading date...</p>
+
+          <!-- Time display -->
           <div class="timeBoxRow">
             <div class="timeBoxes">
+
+              <!-- Hours -->
               <div class="timeBox">
                 <span id="hours">00</span>
                 <small>Hours</small>
@@ -38,6 +53,7 @@
 
               <span class="colon">:</span>
 
+              <!-- Minutes -->
               <div class="timeBox">
                 <span id="minutes">00</span>
                 <small>Minutes</small>
@@ -45,23 +61,29 @@
 
               <span class="colon">:</span>
 
+              <!-- Seconds -->
               <div class="timeBox">
                 <span id="seconds">00</span>
                 <small>Seconds</small>
               </div>
 
+              <!-- AM/PM indicator -->
               <div class="timeBox amPmBox">
                 <span id="ampm">AM</span>
                 <small>Period</small>
               </div>
+
             </div>
           </div>
         </div>
       </div>
     </main>
 
-    <footer></footer>
+    <footer>
+      <!-- Footer section (currently empty, can be used later) -->
+    </footer>
 
+    <!-- External JavaScript file -->
     <script src="./script.js"></script>
   </body>
 </html>
