@@ -115,3 +115,105 @@ body {
 .dark .colon {
   color: white;
 }
+
+
+
+/* Tablet */
+@media (max-width: 992px) {
+  .clockBox {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .clockSection h2 {
+    font-size: 32px;
+  }
+
+  .clockSection p {
+    font-size: 20px;
+  }
+
+  .timeBox {
+    min-width: 75px;
+    padding: 18px;
+  }
+
+  .timeBox span {
+    font-size: 26px;
+  }
+
+  .colon {
+    font-size: 30px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .clockSection {
+    height: auto;
+    padding: 40px 15px;
+  }
+
+  .clockBox {
+    width: 100%;
+    padding: 25px 15px;
+  }
+
+  .clockSection h2 {
+    font-size: 26px;
+  }
+
+  .clockSection p {
+    font-size: 18px;
+  }
+
+  .timeBoxes {
+    gap: 10px;
+  }
+
+  .timeBox {
+    min-width: 65px;
+    padding: 15px 10px;
+  }
+
+  .timeBox span {
+    font-size: 22px;
+  }
+
+  .timeBox small {
+    font-size: 10px;
+  }
+
+  .colon {
+    font-size: 24px;
+  }
+
+  .amPmBox {
+    min-width: 60px;
+  }
+
+  .amPmBox span {
+    font-size: 18px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .timeBoxes {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .colon {
+    display: none;
+  }
+
+  .timeBox {
+    width: 100%;
+    max-width: 180px;
+  }
+
+  .amPmBox {
+    max-width: 120px;
+  }
+}
